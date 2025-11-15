@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cantinho do Pet - Cliente</title>
+  <link rel="stylesheet" href="../assets/css/reset.css" />
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="../assets/css/produtos.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Cantinho do Pet</div>
+    <h1>Produtos</h1>
+    <div class="infos">
+      <div class="data">📅 20/09/2025</div>
+      <div class="empresa">AMOR DE PET</div>
+      <div class="usuario">JULIANA.MARTINS</div>
+      <div class="menu">☰</div>
+    </div>
+  </header>
+
+  <main>
+
+    <nav>
+        <div class="botoes-topo">
+        <a href="produtos_cadastro.html" class="btn-verde">+ Produtos</a>
+        <a href="produtos_setores.html" class="btn-verde">+ Setores</a>
+        <a href="produtos_grupos.html" class="btn-verde">+ Grupo</a>
+        <a href="/produtos/produtos.html" class="btn-verde">Voltar produtos</a>
+        <a href="/hub.html" class="btn-verde">Voltar Hub</a>
+        
+
+        <div class="filtro-pesquisa">
+            <div class="dropdown">
+            <button class="filtro-btn">🔍</button>
+            <div class="dropdown-conteudo">
+                <label><input type="radio" name="filtro" checked> ID Cliente</label>
+                <label><input type="radio" name="filtro"> Cliente</label>
+                <label><input type="radio" name="filtro"> Telefone</label>
+                <label><input type="radio" name="filtro"> CPF</label>
+            </div>
+            </div>
+            <input type="text" placeholder="Pesquisar...">
+        </div>
+        </div>
+    </nav>
+   
+    <!-- corpo -->
+
+    <form id="cadastro-produto">
+    
+        <br>
+        <h2>CADASTRO NOVO PRODUTO</h2>
+        <br>
+    
+        <div class="linha_cheia">
+        <div class="form-group full-width">
+            <label for="codBarras">Código Barras</label>
+            <input type="text" id="codBarras" value="7896029079999">
+        </div>
+    </div>
+        
+    <br>
+    
+    
+    <div class="linha_cheia">
+        <div class="form-group full-width">
+            <label for="nomeProduto">Nome Produto</label>
+            <input type="text" id="nomeProduto" value="Algodão Impermeável - Lady e Maya">
+        </div>
+    </div>
+        
+    <br>
+    
+    <div class="field-row split-fields">
+        <div class="form-group half-width">
+            <label for="tamanho">Tamanho</label>
+            <input type="text" id="tamanho" value="200GR">
+        </div>
+
+        <br>
+
+        <div class="form-group half-width">
+            <label for="preco">Preço</label>
+            <input type="text" id="preco" value="30,00">
+        </div>
+    </div>
+        
+    <br>
+    
+    
+    <div class="button-group">
+        <button type="button" class="btn cancel">CANCELAR</button>
+        <button type="submit" class="btn cadastrar">CADASTRAR</button>
+    </div>
+</form>
+
+  </main>
+
+</body>
+</html>
