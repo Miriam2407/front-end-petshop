@@ -16,32 +16,32 @@
 
 
   <main>
-    <div class="botoes-topo">
-      <a href="produtos_cadastro.html" class="btn-verde">+ Produtos</a>
-      <a href="produtos_setores.html" class="btn-verde">+ Setores</a>
-      <a href="produtos_grupos.html" class="btn-verde">+ Grupo</a>
-      <div class="dropdown-acoes">
-        <button class="btn-branco">OUTRAS AÇÕES</button>
-        <div class="menu-acoes">
-          <a href="#">Excluir</a>
-          <a href="#">Exportar</a>
-        </div>
-         <a href="/hub.html" class="btn-verde">Voltar Hub</a>
-      </div>
+  <div class="botoes-topo">
+    <a href="produtos_cadastro.html" class="btn-verde">+ Produtos</a>
+    <a href="produtos_setores.html" class="btn-verde">+ Setores</a>
+    <a href="produtos_grupos.html" class="btn-verde">+ Grupo</a>
 
-      <div class="filtro-pesquisa">
-        <div class="dropdown">
-          <button class="filtro-btn">🔍</button>
-          <div class="dropdown-conteudo">
-            <label><input type="radio" name="filtro" checked> ID Cliente</label>
-            <label><input type="radio" name="filtro"> Cliente</label>
-            <label><input type="radio" name="filtro"> Telefone</label>
-            <label><input type="radio" name="filtro"> CPF</label>
-          </div>
-        </div>
-        <input type="text" placeholder="Pesquisar...">
+    <div class="dropdown-acoes">
+      <button class="btn-branco">OUTRAS AÇÕES</button>
+      <div class="menu-acoes">
+        <a href="#">Excluir</a>
+        <a href="#">Exportar</a>
       </div>
+    </div> <!-- FECHAMENTO CORRETO -->
+
+    <div class="filtro-pesquisa">
+      <div class="dropdown">
+        <button class="filtro-btn">🔍</button>
+        <div class="dropdown-conteudo">
+          <label><input type="radio" name="filtro" checked> Código de Barras</label>
+          <label><input type="radio" name="filtro"> Nome</label>
+          <label><input type="radio" name="filtro"> Grupo</label>
+          <label><input type="radio" name="filtro"> Setor</label>
+        </div>
+      </div>
+      <input type="text" placeholder="Pesquisar...">
     </div>
+  </div>
 
     <section class="tabela">
       <table>
