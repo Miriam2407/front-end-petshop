@@ -40,6 +40,7 @@ function atualizarTituloDinamico() {
   const tituloEl = document.getElementById("pageTitle");
 
   const titulos = {
+    vendas: "VENDAS",
     cliente: "CADASTRO DE CLIENTE",
     produto: "CADASTRO DE PRODUTO",
     inicio: "PÁGINA INICIAL"
