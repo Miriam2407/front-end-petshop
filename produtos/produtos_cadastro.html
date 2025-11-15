@@ -15,30 +15,25 @@
   <script src="/assets/js/header.js"></script>
 
   <main>
+    <div class="botoes-topo">
+    <a href="produtos.html" class="voltar">⬅</a>
+    <a href="produtos_cadastro.html" class="btn-verde">+ Produtos</a>
+    <a href="produtos_setores.html" class="btn-verde">+ Setores</a>
+    <a href="produtos_grupos.html" class="btn-verde">+ Grupo</a>
 
-    <nav>
-        <div class="botoes-topo">
-        <a href="produtos_cadastro.html" class="btn-verde">+ Produtos</a>
-        <a href="produtos_setores.html" class="btn-verde">+ Setores</a>
-        <a href="produtos_grupos.html" class="btn-verde">+ Grupo</a>
-        <a href="/produtos/produtos.html" class="btn-verde">Voltar produtos</a>
-        <a href="/hub.html" class="btn-verde">Voltar Hub</a>
-        
-
-        <div class="filtro-pesquisa">
-            <div class="dropdown">
-            <button class="filtro-btn">🔍</button>
-            <div class="dropdown-conteudo">
-                <label><input type="radio" name="filtro" checked> ID Cliente</label>
-                <label><input type="radio" name="filtro"> Cliente</label>
-                <label><input type="radio" name="filtro"> Telefone</label>
-                <label><input type="radio" name="filtro"> CPF</label>
-            </div>
-            </div>
-            <input type="text" placeholder="Pesquisar...">
+    <div class="filtro-pesquisa">
+      <div class="dropdown">
+        <button class="filtro-btn">🔍</button>
+        <div class="dropdown-conteudo">
+          <label><input type="radio" name="filtro" checked> Código de Barras</label>
+          <label><input type="radio" name="filtro"> Nome</label>
+          <label><input type="radio" name="filtro"> Grupo</label>
+          <label><input type="radio" name="filtro"> Setor</label>
         </div>
-        </div>
-    </nav>
+      </div>
+      <input type="text" placeholder="Pesquisar...">
+    </div>
+  </div>
    
     <!-- corpo -->
 
@@ -51,7 +46,7 @@
         <div class="linha_cheia">
         <div class="form-group full-width">
             <label for="codBarras">Código Barras</label>
-            <input type="text" id="codBarras" value="7896029079999">
+            <input type="text" id="codBarras" value="">
         </div>
     </div>
         
@@ -61,7 +56,7 @@
     <div class="linha_cheia">
         <div class="form-group full-width">
             <label for="nomeProduto">Nome Produto</label>
-            <input type="text" id="nomeProduto" value="Algodão Impermeável - Lady e Maya">
+            <input type="text" id="nomeProduto" value="">
         </div>
     </div>
         
@@ -70,14 +65,14 @@
     <div class="field-row split-fields">
         <div class="form-group half-width">
             <label for="tamanho">Tamanho</label>
-            <input type="text" id="tamanho" value="200GR">
+            <input type="text" id="tamanho" value="">
         </div>
 
         <br>
 
         <div class="form-group half-width">
             <label for="preco">Preço</label>
-            <input type="text" id="preco" value="30,00">
+            <input type="text" id="preco" value="">
         </div>
     </div>
         
