@@ -47,14 +47,11 @@ header {
   cursor: pointer;
 }
 
-/* =============================
-   MENU LATERAL (Sidebar)
-   ============================= */
 
 #sideMenu {
   position: fixed;
   top: 0;
-  right: -260px;         /* fica escondido */
+  right: -260px;
   width: 260px;
   height: 100vh;
   background: #ffffff;
@@ -64,16 +61,16 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  transition: right 0.35s ease-in-out;   /* animação suave */
+  transition: right 0.35s ease-in-out;
   z-index: 1000;
 }
 
-/* Quando estiver aberto */
+
 #sideMenu.open {
   right: 0;
 }
 
-/* Fundo escurecido enquanto menu está aberto */
+
 #menuBackdrop {
   position: fixed;
   top: 0;
@@ -93,7 +90,7 @@ header {
   visibility: visible;
 }
 
-/* Título do menu */
+
 #sideMenu h2 {
   font-size: 1.3rem;
   font-weight: 700;
@@ -102,7 +99,7 @@ header {
   margin-bottom: 10px;
 }
 
-/* Botões do menu */
+
 .menu-btn {
   width: 100%;
   padding: 12px 15px;
@@ -121,7 +118,7 @@ header {
   background-color: #9fe8cc;
 }
 
-/* Botão de sair da aplicação */
+
 #exitApp {
   background-color: #ffb3b3;
   color: #600;
@@ -131,7 +128,7 @@ header {
   background-color: #ff8a8a;
 }
 
-/* Responsivo */
+
 @media (max-width: 480px) {
   #sideMenu {
     width: 80%;

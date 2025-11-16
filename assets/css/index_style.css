@@ -1,12 +1,11 @@
 :root {
-    /* Cores*/
-    --color-green-background: #a9e0c5; /* Verde claro de fundo */
-    --color-text-green: #418967;      /* Verde da fonte e labels */
-    --color-button-green: #4CAF50;    /* Verde do botão de login */
+    --color-green-background: #a9e0c5;
+    --color-text-green: #418967;
+    --color-button-green: #4CAF50;
     --color-white: #ffffff;
 }
 
-/* Configurações Globais e Fundo */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,7 +24,7 @@ body {
     min-height: 100vh;
 }
 
-/*Login Principal */
+
 .login-card {
     background-color: var(--color-white);
     padding: 40px 50px;
@@ -36,7 +35,7 @@ body {
     width: 90%;
 }
 
-/*Títulos e Texto */
+
 .welcome-title {
     font-size: 28px;
     color: var(--color-text-green);
@@ -62,7 +61,7 @@ body {
     margin-bottom: 30px;
 }
 
-/*Formulário e Campos de Input */
+
 .login-form {
     display: flex;
     flex-direction: column;
@@ -101,7 +100,7 @@ body {
     outline: none;
 }
 
-/*Botão de Login */
+
 .login-button {
     background-color: var(--color-button-green);
     color: var(--color-white);

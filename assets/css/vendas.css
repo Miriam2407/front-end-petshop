@@ -3,7 +3,7 @@ body {
     background: #f8f8f8;
 }
 
-/* BOTÕES SUPERIORES */
+
 .top-actions {
     display: flex;
     gap: 20px;
@@ -28,7 +28,7 @@ body {
     cursor: pointer;
 }
 
-/* ===== FILTRO PESQUISA ===== */
+
 .filtro-pesquisa {
   margin-left: auto;
   display: flex;
@@ -75,7 +75,7 @@ body {
   padding: 4px 0;
 }
 
-/* TABELA */
+
 table {
     width: 95%;
     margin: auto;
@@ -106,7 +106,7 @@ td {
 .gray { background: gray; }
 .green { background: green; }
 
-/* POPUP OUTRAS AÇÕES */
+
 .popup-acoes {
     display: none;
     position: fixed;
@@ -136,7 +136,7 @@ td {
     font-weight: bold;
 }
 
-/* Imagem do lapis*/
+
 
 .lapiz{
   width: 44px;
@@ -147,7 +147,6 @@ td {
 }
 
 
-/* === POPUPS TRANSMITIR / MONITORAR === */
 
 .popup-transmitir,
 .popup-monitorar {

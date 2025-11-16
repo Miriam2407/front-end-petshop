@@ -1,17 +1,16 @@
-/* Variáveis de Cores */
 :root {
-    --color-primary: #82e0aa; /* Tom de verde/menta */
-    --color-secondary: #f0e68c; /* Tom de creme/pêssego claro */
+    --color-primary: #82e0aa;
+    --color-secondary: #f0e68c;
     --color-text-dark: #333;
     --color-text-light: #fff;
     --color-bg-light: #f9f9f9;
-    --color-sidebar-bg: #e0f2f1; /* Verde/azul claro para sidebar */
-    --color-sidebar-active: #66bb6a; /* Verde mais escuro para item ativo */
-    --color-peach-light: #f7cac9; /* Rosa pêssego claro */
-    --color-brown-dark: #6e574c; /* Marrom escuro */
+    --color-sidebar-bg: #e0f2f1;
+    --color-sidebar-active: #66bb6a;
+    --color-peach-light: #f7cac9;
+    --color-brown-dark: #6e574c;
 }
 
-/* Base e Layout Principal */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -25,13 +24,13 @@ body {
     min-height: 100vh;
 }
 
-/* 1. Sidebar */
+
 .sidebar {
     width: 250px;
     background-color: var(--color-sidebar-bg);
     padding: 20px 0;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
-    border-radius: 0 15px 15px 0; /* Borda arredondada na lateral direita */
+    border-radius: 0 15px 15px 0;
 }
 
 .sidebar-header {
@@ -78,13 +77,13 @@ body {
     margin: 10px 20px;
 }
 
-/* 2. Conteúdo Principal */
+
 .main-content {
     flex-grow: 1;
     padding: 20px;
 }
 
-/* 2.1. Cabeçalho */
+
 .header {
     display: flex;
     align-items: center;
@@ -142,14 +141,14 @@ body {
     margin-left: 10px;
 }
 
-/* 2.2. Dashboard Cards */
+
 .dashboard-cards {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* Card Principal (Welcome) */
+
 .welcome-card {
     display: flex;
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-peach-light) 100%);
@@ -161,7 +160,6 @@ body {
     overflow: hidden;
 }
 
-/* Estilização das formas de fundo (como na imagem) */
 .welcome-card::before,
 .welcome-card::after {
     content: '';
@@ -223,12 +221,12 @@ body {
 }
 
 .welcome-text .suggestions a {
-    color: #ffd700; /* Destaque amarelo */
+    color: #ffd700;
     font-weight: bold;
     text-decoration: none;
 }
 
-/* Cards Inferiores */
+
 .bottom-cards {
     display: flex;
     gap: 20px;
@@ -248,7 +246,7 @@ body {
     background-color: var(--color-secondary);
     border: 2px dashed var(--color-peach-light);
     color: var(--color-text-dark);
-    max-width: 400px; /* Ajuste para parecer com a imagem */
+    max-width: 400px;
 }
 
 .component-label {
@@ -306,52 +304,48 @@ body {
     font-weight: bold;
 }
 
-/* --- Estilos para Submenus --- */
 
-/* Esconde o submenu por padrão */
 .submenu {
     list-style: none;
     padding: 0;
     margin: 0;
-    max-height: 0; /* Usado para animação de slide-down */
+    max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-    background-color: rgba(255, 255, 255, 0.2); /* Um fundo leve para destaque */
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Exibe o submenu quando o item pai tem a classe 'open' (adicionada pelo JS) */
+
 .nav-item.open > .submenu {
-    /* Define uma altura máxima suficiente para todos os sub-itens */
     max-height: 200px; 
 }
 
-/* Estilo dos links dos sub-itens */
+
 .submenu-item a {
-    /* Indentação para diferenciar do item pai */
     padding: 8px 20px 8px 40px; 
     font-size: 0.9em;
     font-weight: normal;
     background-color: rgba(255, 255, 255, 0.1);
-    border-left: 3px solid transparent; /* Linha de destaque */
+    border-left: 3px solid transparent;
 }
 
 .submenu-item a:hover {
     background-color: rgba(0, 0, 0, 0.08);
 }
 
-/* Estilo para o sub-item ativo */
+
 .submenu-item.active a {
     background-color: rgba(0, 0, 0, 0.15);
     border-left: 3px solid var(--color-sidebar-active);
     color: var(--color-sidebar-active);
 }
 
-/* Transição para girar o ícone de + para - */
+
 .nav-item.has-submenu i {
     transition: transform 0.3s ease;
 }
 
-/* Gira o ícone quando o menu está aberto */
+
 .nav-item.open i {
-    transform: rotate(45deg); /* Simula um "X" ou usa o ícone fa-minus no JS */
+    transform: rotate(45deg);
 }

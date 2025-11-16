@@ -1,4 +1,3 @@
-/* ======== AÇÕES ======== */
 main {
   padding: 20px;
 }
@@ -11,10 +10,13 @@ main {
 }
 
 .voltar {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
+background-color: #f7f7f7;
+border-radius: 8px;
+padding: 10px 15px; 
+color: #000;
+font-size: 1.2rem;
+text-decoration: none;
+font-weight: bold;
 }
 
 .adicionar {
@@ -58,7 +60,7 @@ main {
   padding: 5px;
 }
 
-/* ======== FORMULÁRIO ======== */
+
 .formulario {
   border: 2px solid #ccc;
   border-radius: 10px;
@@ -69,21 +71,21 @@ main {
   gap: 15px;
 }
 
-/* Cada linha de campos distribuída horizontalmente */
+
 .linha {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 15px;
 }
 
-/* ======== PARES DE CAMPO ======== */
+
 .campo {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-/* Parte verde (label) encostada na branca (input) */
+
 .campo label {
   background-color: #b6f0dc;
   color: #004d25;
@@ -98,12 +100,12 @@ main {
 .campo input {
   flex: 1;
   border: 1px solid #ccc;
-  border-left: none; /* remove linha entre label e input */
+  border-left: none;
   border-radius: 0 6px 6px 0;
   padding: 6px 8px;
 }
 
-/* ======== BOTÃO ADICIONAR PET ======== */
+
 .botao-pet {
   background-color: #b6f0dc;
   border: none;
@@ -121,7 +123,7 @@ main {
   background-color: #a2e0cb;
 }
 
-/* ======== RESPONSIVIDADE ======== */
+
 @media (max-width: 768px) {
   .linha {
     grid-template-columns: 1fr;
